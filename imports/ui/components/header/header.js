@@ -6,8 +6,8 @@ import './header.html';
 
 Template.header.events({
   'click #logOut'() {
-     Meteor.logout(() => {
-        FlowRouter.go('/sign-in');
-     });
+    Meteor.logout(() => {
+      FlowRouter.go('/sign-in');
+    });
   },
 });
