@@ -1,0 +1,35 @@
+<template name="profile">
+  <h2 class="ui dividing header">Mon profil</h2>
+  <div class="ui stackable grid">
+    <div class="eight wide column">
+
+      <form class="ui large form">
+        <div class="field">
+          <label>Nom complet</label>
+          <div class="two fields">
+            <div class="field">
+              <input type="text" name="firstname" placeholder="Prénom(s)" value="{{currentUser.profilse.firstname}}">
+            </div>
+            <div class="field">
+              <input type="text" name="lastname" placeholder="Nom de famille" value="{{currentUser.profilse.lastname}}">
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label>Adresse email</label>
+          <input type="email" name="email" placeholder="Adresse email" value="{{currentUser.emails.[0].address}}" readonly>
+        </div>
+        <div class="field">
+          <label>Localisation</label>
+          <input type="text" name="location" placeholder="Nom de votre agence, ville ou pays" value="{{currentUser.profile.location}}" readonly>
+        </div>
+      </form>
+
+    </div>
+    <div class="eight wide column">
+
+
+
+    </div>
+  </div>
+</template>
